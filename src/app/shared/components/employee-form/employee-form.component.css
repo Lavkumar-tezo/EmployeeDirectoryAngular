@@ -1,0 +1,269 @@
+.employee-form-container {
+    width: 100%;
+    height: 98%;
+    background: var(--white);
+    z-index: 3;
+}
+
+.employee-form-heading {
+    font-size: 1rem;
+}
+
+.employee-form{
+    margin-top: 0.4rem;
+    padding-left: 2px;
+    font-size: 0.6rem;
+    padding-bottom: 0.5rem;
+}
+
+.employee-form input{
+    outline: 0;
+    border: 2px solid var(--white-800);
+    border-radius: 2px;
+    padding-left: 0.25rem;
+}
+
+.employee-image-upload,
+.personal-info-container,
+.employement-info-container {
+    width: 70%;
+}
+
+.employee-image-upload {
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.employee-image-preview {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.employee-profile-img,
+.edit-employee-profile {
+    width: 100%;
+    object-fit: contain;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.profile-upload-button {
+    white-space: nowrap;
+}
+
+.profile-upload-btn {
+    white-space: nowrap;
+}
+
+.personal-info-container,
+.employement-info-container {
+    margin-top: 0.5rem;
+}
+
+.personal-info-heading,
+.employement-info-head {
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.personal-info,
+.employemnt-details,
+.cancel-add-btn {
+    margin-top: 0.5rem;
+}
+
+.name-dob-container,
+.emp-contact-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+
+.employemnt-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.emp-no-container {
+    width: 32%;
+}
+
+.employee-form input,
+select {
+    height: 1.4rem;
+    font-size: 0.6rem;
+    width: 100%;
+}
+
+#new-emp-dob {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.dob-input {
+    border: 2px solid var(--white-800);
+    border-radius: 3px;
+    padding-left: 4px;
+    gap: 4px;
+    height: 1.7rem;
+}
+
+.calender-icon {
+    height: 80%;
+}
+
+.employement-info-container select {
+    background-color: var(--grey-100);
+    border: none;
+}
+
+.cancel-add-btn {
+    justify-content: flex-end;
+    gap: 2%;
+}
+
+.cancel-new-empl {
+    background-color: var(--red-400);
+    color: var(--red-800);
+    border: 0;
+    text-align: center;
+    padding: 0.25rem 1.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.insert-empl,
+.final-edit-empl {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: var(--blue);
+}
+
+select:focus {
+    border: 2px solid var(--blue);
+}
+.text-danger{
+    color: red;
+}
+@keyframes show {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:980px) {
+
+    .employee-image-upload,
+    .personal-info-container,
+    .employement-info-container {
+        width: 85%;
+    }
+
+    .employee-form input,
+    select,
+    .edit-employee-form input,
+    select {
+        height: 1.7rem;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .personal-info-heading,
+    .employement-info-head {
+        font-size: 0.9rem;
+    }
+
+    .form-label {
+        font-size: 0.6rem;
+    }
+
+    .employee-form input,
+    select,
+    .edit-employee-form input,
+    select,
+    .dob-input {
+        height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .cancel-new-empl,
+    .edit-form-close,
+    .edit-form-enable,
+    .insert-empl,
+    .final-edit-empl {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .employee-image-upload,
+    .personal-info-container,
+    .employement-info-container {
+        width: 100%;
+    }
+
+    .form-label {
+        font-size: 0.8rem;
+    }
+
+    .employee-form input,
+    select,
+    .edit-employee-form input,
+    select,
+    .dob-input {
+        height: 2.25rem;
+        font-size: 1rem;
+    }
+
+    .cancel-new-empl,
+    .edit-form-close,
+    .edit-form-enable,
+    .insert-empl,
+    .final-edit-empl {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .name-dob-container,
+    .emp-contact-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .name-dob-container,
+    .emp-contact-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        margin-top: 0.5rem;
+    }
+}

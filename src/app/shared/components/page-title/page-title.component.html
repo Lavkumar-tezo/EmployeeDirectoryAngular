@@ -1,0 +1,19 @@
+<div class="page-title-container d-flex jus-content-btw w-100">
+    <div class="employee">
+        <div class="employee-heading">{{titleDesc.title1}}{{ (titleDesc.title2)? ' > '+ titleDesc.title2:''}}</div>
+        <div class="employee-gen-desc">
+            {{titleDesc.desc}}
+        </div>
+    </div>
+    <div class="employee-btns flex-container jus-content-btw">
+        <button class="export-btn btn flex-container" *ngIf="titleDesc.btn2" (click)="exportArrayToExcel()">
+            <img src="assets/icons/export.svg" alt="export-icon" />
+            <span>EXPORT</span>
+        </button>
+        <div [routerLink]="titleDesc.route" class="add-employee add-role-btn btn flex-container">
+            <img src="assets/icons/add.svg" alt=" /">
+            <span>{{titleDesc.btn1}}</span>
+        </div>
+        
+    </div>
+</div>

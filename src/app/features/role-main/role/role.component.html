@@ -1,0 +1,10 @@
+<div class="w-100 role-page">
+    <app-page-title [titleDesc]="rolePageDesc"></app-page-title>
+    <app-role-filter></app-role-filter>
+    <div class="role-card-container w-100 d-grid">
+        <app-role-card [roledata]="role" *ngFor="let role of roleList"></app-role-card>
+        <div class="no-record-card" *ngIf="!roleList.length">
+            No role found
+        </div>
+    </div>
+</div>

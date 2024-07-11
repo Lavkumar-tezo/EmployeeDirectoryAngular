@@ -1,0 +1,43 @@
+<div class="add-role-container">
+    <span class="role-form-heading">{{formTitle}}</span>
+    <form class="add-role" [formGroup]="roleForm">
+        <div class="form-main-fields">
+          <div class="role-name-dept d-flex jus-content-btw">
+            <div class="role-name-container">
+              <label for="role-name">Role Name</label><br>
+              <input type="text" name="role" id="role-name" placeholder="Role name" formControlName="name"
+              [ngStyle]="(roleForm.get('name').touched && roleForm.get('name').invalid) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}">
+              <span *ngIf="roleForm.get('name').touched && roleForm.get('name').invalid" class="text-danger">
+                <ng-container *ngIf="roleForm.get('name').errors?.['required']">&#9888;Role name is required</ng-container>
+                <ng-container *ngIf="roleForm.get('name').errors?.['minlength']">&#9888;Role Name should be at least 3 characters long.</ng-container>
+                <ng-container *ngIf="roleForm.get('name').errors?.['pattern']">&#9888;Role name should have alphabets only.</ng-container>
+              </span>
+            </div>
+            <div class="role-dept">
+              <label for="role-dept">Department</label><br>
+              <select name="dept" id="role-dept" formControlName="departmentIds" multiple>
+                <option value="" selected hidden>Selct Department</option>
+                <option [value]="dept.id" *ngFor="let dept of departments">{{dept.name}}</option>
+              </select>
+              <span class="text-danger" *ngIf="roleForm.get('departmentIds').errors?.['required'] && roleForm.get('departmentIds').touched"> This is required field</span>
+            </div>
+          </div>
+          <div class="role-desc">
+            <label for="role-desc">Role Description (optional)</label><br>
+            <textarea name="desc" id="role-desc" formControlName="description"></textarea>
+          </div>
+          <div class="role-location">
+            <label for="role-location">Location</label><br>
+            <select name="location" id="role-location" multiple formControlName="locationIds" size="2">
+            <option value="" selected hidden>Select Location</option>
+            <option [value]="loc.id" *ngFor="let loc of locations">{{loc.name}}</option>
+            </select>
+            <span class="text-danger" *ngIf="roleForm.get('locationIds').errors?.['required'] && roleForm.get('locationIds').touched"> This is required field</span>
+          </div>
+        </div>
+        <div class="add-cancel-btns d-flex">
+          <button type="button" value="cancel" class="cancel-add-role b-5" (click)="onReset()">Cancel</button>
+          <button type="submit" value="submit" class="submit-add-role btn b-5" (click)="onSubmit()" [disabled]="roleForm.invalid || !roleForm.touched">Add Role</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,78 @@
+.employee-filter{
+    width: 100%;
+    gap:0.5rem;
+}
+.alphabet-filter{
+    margin-top: 1.5vh;
+}
+.toggle-filter-section {
+    background: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.alphabet-list {
+    list-style-type: none;
+    gap: 0.25rem;
+}
+
+.alphabet {
+    background-color: #eaebee;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0.2rem;
+    width: 90%;
+    color: var(--blue-200);
+    border-radius: 5px;
+    font-size: 0.7rem;
+}
+
+.alphabet:hover {
+    background-color: var(--red-800);
+    color: var(--white);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.active-alphabet-filter {
+    background-color: var(--red-800);
+    color: var(--white);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.filter-opts {
+    gap: 0.5rem;
+}
+
+.filter-icon-container {
+    color: var(--red);
+    gap: 0.25rem;
+}
+
+.filter-select {
+    outline: 0;
+    font-size: 0.7rem;
+    color: var(--blue-200);
+    border: 1px solid #fac0c0;
+    border-radius: 5px;
+}
+
+.btn-container {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+}
+
+.reset-btn {
+    background-color: white;
+    color: var(--red);
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border: 1px solid var(--red-800);
+}
+
+.apply-btn {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+}

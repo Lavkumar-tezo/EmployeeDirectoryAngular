@@ -1,0 +1,35 @@
+<div class="employee-filter d-flex flex-col">
+    <div class="alphabet-filter d-flex jus-content-btw w-100">
+        <div class="toggle-filter-section d-flex" title="Hide Filter Section">
+            <img src="assets/icons/filter-red.svg" alt="filter-icon" class="filter-icon" id="filter-icon" />
+        </div>
+        <ul class="alphabet-list flex-container w-100 jus-content-btw">
+            <li class="alphabet" *ngFor="let letter of alphabet"
+                [class.active-alphabet-filter]="letter === selectedAlphabet"
+                (click)="onAlphabeticSelect(letter)">
+                {{ letter }}
+            </li>
+        </ul>
+    </div>
+    <div class="w-100 d-flex jus-content-btw b-5 reset-filter">
+        <div class="filter-opts d-flex">
+            <div class="filter-icon-container flex-container">
+              <span>Filter</span>
+              <img src="assets/icons/filter-lines.svg" alt="filter-lines" class="filter-icon" />
+            </div>
+            <app-select-filter name="status" [values]="statusList" 
+             (valuesEvent)="onStatusFilterChange($event)" (filterChangedEvent)="onFilterChange($event)"
+            [isAllValuesDefault]="isStatusDefault"></app-select-filter>
+            <app-select-filter name="Department" [values]="departmentList" 
+             (valuesEvent)="onDeptFilterChange($event)" (filterChangedEvent)="onFilterChange($event)"
+             [isAllValuesDefault]="isDeptDefault"></app-select-filter>
+            <app-select-filter name="Location" [values]="locationList"
+             (valuesEvent)="onLocationFilterChange($event)" (filterChangedEvent)="onFilterChange($event)"
+            [isAllValuesDefault]="isLocationDefault"></app-select-filter>
+        </div>
+          <div class="btn-container d-flex">
+            <button class="btn reset-btn" (click)="resetFilters()">Reset</button>
+            <button class="btn apply-btn" (click)="applyFilters()">Apply</button>
+          </div>
+    </div>
+</div>

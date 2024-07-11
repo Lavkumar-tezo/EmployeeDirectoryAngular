@@ -1,0 +1,20 @@
+<div class="role-fiilter d-flex flex-col">
+    <div class="w-100 d-flex jus-content-btw b-5 reset-filter">
+        <div class="filter-opts d-flex">
+            <div class="filter-icon-container flex-container">
+              <span>Filter</span>
+              <img src="assets/icons/filter-lines.svg" alt="filter-lines" class="filter-icon" />
+            </div>
+            <app-select-filter name="Department" [values]="departmentList" 
+             (valuesEvent)="onDeptFilterChange($event)" (filterChangedEvent)="onFilterChange($event)"
+             [isAllValuesDefault]="isDeptDefault"></app-select-filter>
+            <app-select-filter name="Location" [values]="locationList"
+             (valuesEvent)="onLocationFilterChange($event)" (filterChangedEvent)="onFilterChange($event)"
+            [isAllValuesDefault]="isLocationDefault"></app-select-filter>
+        </div>
+          <div class="btn-container d-flex">
+            <button class="btn reset-btn" (click)="resetFilters()">Reset</button>
+            <button class="btn apply-btn" (click)="applyFilters()">Apply</button>
+          </div>
+    </div>
+</div>

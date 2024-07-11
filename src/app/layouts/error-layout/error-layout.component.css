@@ -1,0 +1,25 @@
+.page-not-found-container{
+    padding: 200px 0px;
+    text-align: center;
+}
+
+h1{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.page-not-found{
+    color: #FF5733;
+    font-weight: bold;
+}
+
+.navigation-btns{
+    justify-content: space-between;
+    gap:2rem;
+}
+.navigation-btns button{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}

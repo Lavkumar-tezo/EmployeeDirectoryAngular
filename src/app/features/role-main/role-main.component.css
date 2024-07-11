@@ -1,0 +1,8 @@
+.role-page{
+    gap:0.5rem;
+    display: flex;
+    height: 99%;
+    overflow: scroll;
+    flex-direction: column;
+    width: 100%;
+}

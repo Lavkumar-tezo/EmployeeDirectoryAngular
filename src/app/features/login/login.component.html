@@ -1,0 +1,26 @@
+<div class="login-container">
+    <div class="logo-container">
+      <img src="/assets/images/tezo-logo.png" alt="Company Logo">
+    </div>
+    <div class="login-form glass-effect">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <h2>Login</h2>
+          <div class="input-box">
+            <input type="text" formControlName="username">
+            <label>Username</label>
+            <div >
+              <span class="text-danger" *ngIf="loginForm.get('username').invalid && (loginForm.get('username').dirty || loginForm.get('username').touched)">Username is required.</span>
+            </div>
+          </div>
+          <div class="input-box">
+            <input type="password" formControlName="password">
+            <label>Password</label>
+            <div >
+              <span class="text-danger" *ngIf="loginForm.get('password').invalid && (loginForm.get('password').dirty || loginForm.get('password').touched)">Password is required.</span>
+            </div>
+          </div>
+          <button type="submit" class="login-btn" [disabled]="loginForm.invalid">Login</button>
+        </form>
+      </div>
+      
+</div>

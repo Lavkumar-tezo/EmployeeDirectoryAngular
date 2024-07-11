@@ -1,0 +1,14 @@
+.wrapper{
+    height: 100%;
+    padding:0.5rem 1rem;
+    grid-template-columns: 1fr 4.5fr;
+    gap:1rem;
+    position: relative;
+    transition: grid-template-column 1s ease-in-out;
+}
+.content{
+    height:98vh;
+    position: relative;
+    gap:0.5rem;
+    overflow:auto;
+}

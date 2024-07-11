@@ -1,0 +1,138 @@
+<div class="employee-form-container w-100">
+    <span class="employee-form-heading">{{formTitle}}</span>
+<form class="employee-form" [formGroup]="employeeForm" (ngSubmit)="onSubmit()" (reset)="onReset()">
+  <div class="employee-image-upload d-flex">
+    <div class="employee-image-preview flex-container">
+      <img [src]="imagePreview" alt="dummy-profile-image" class="employee-profile-img" />
+    </div>
+    <label for="empl-img" class="profile-upload-button btn b-5">Upload Profile Picture</label>
+    <input type="file" name="img" id="empl-img" accept="image/*" (change)="onFileChange($event)" />
+  </div>
+  <div class="personal-info-container">
+    <span class="personal-info-heading">Personal Information</span>
+    <div class="personal-info">
+      <div class="emp-no-container">
+        <label class="form-label" for="new-emp-no">Emp Number</label><br />
+        <input type="text" placeholder="Text" id="new-emp-no" name="id"
+        [ngStyle]="(employeeForm.get('id').touched && employeeForm.get('id').invalid) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}"
+        
+        formControlName="id"
+        (input)="transformToUpperCase('id')"/>
+        <span *ngIf="employeeForm.get('id').touched && employeeForm.get('id').invalid" class="text-danger">
+          <ng-container *ngIf="employeeForm.get('id').errors?.['required']">&#9888;Emp number is required.</ng-container>
+          <ng-container *ngIf="employeeForm.get('id').errors?.['pattern']">&#9888;Emp number should be in TZXXXX format.</ng-container>
+        </span>
+      </div>
+      <div class="name-dob-container d-grid">
+        <div class="emp-first-name">
+          <label class="form-label" for="new-emp-fname">First Name</label><br />
+          <input type="text" placeholder="Text"
+          [ngStyle]="(employeeForm.get('firstName').invalid && employeeForm.get('firstName').touched) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}"
+           name="firstName" formControlName="firstName" id="new-emp-fname" />
+           <span *ngIf="employeeForm.get('firstName').touched && employeeForm.get('firstName').invalid" class="text-danger">
+            <ng-container *ngIf="employeeForm.get('firstName').errors?.['required']">&#9888;First Name is required.</ng-container>
+            <ng-container *ngIf="employeeForm.get('firstName').errors?.['minlength']">&#9888;First Name be at least 3 characters long.</ng-container>
+          </span>
+        </div>
+        <div class="emp-last-name">
+          <label class="form-label" for="new-emp-lname">Last Name</label><br />
+          <input type="text" 
+          [ngStyle]="(employeeForm.get('lastName').invalid && employeeForm.get('lastName').dirty) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}"
+          placeholder="Text" name="lastName" formControlName="lastName" id="new-emp-lname" />
+          <span *ngIf="employeeForm.get('lastName').touched && employeeForm.get('lastName').invalid" class="text-danger">
+            <ng-container *ngIf="employeeForm.get('lastName').errors?.['required']">&#9888;First Name is required.</ng-container>
+            <ng-container *ngIf="employeeForm.get('lastName').errors?.['minlength']">&#9888;First Name be at least 3 characters long.</ng-container>
+          </span>
+        </div>
+        <div class="emp-dob">
+          <label class="form-label" for="new-emp-dob">Date of Birth</label><br />
+          <div class="flex-container dob-input">
+            <input type="date" name="dob" id="new-emp-dob" placeholder="select" formControlName="dob"/>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="emp-contact-container d-grid">
+        <div class="emp-email">
+          <label class="form-label" for="new-emp-email">Email</label><br />
+          <input type="email" placeholder=" Joe.j@tezo.com" 
+          [ngStyle]="(employeeForm.get('email').invalid && employeeForm.get('email').dirty) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}"
+          id="new-emp-email" name="email" formControlName="email" />
+          <span *ngIf="employeeForm.get('email').touched && employeeForm.get('email').invalid" class="text-danger">
+            <ng-container *ngIf="employeeForm.get('email').errors?.['required']">&#9888;Email is required.</ng-container>
+            <ng-container *ngIf="employeeForm.get('email').errors?.['email']">&#9888;Email should be valid.</ng-container>
+          </span>
+        </div>
+        <div class="emp-phone">
+          <label class="form-label" for="new-emp-mobile">Mobile Number</label><br />
+          <input type="text"
+          [ngStyle]="(employeeForm.get('mobile').invalid && employeeForm.get('mobile').dirty) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}" maxlength="10" minlength="10" name="mobile" placeholder="0000000000" formControlName="mobile"/>
+          <span *ngIf="employeeForm.get('mobile').touched && employeeForm.get('mobile').invalid" class="text-danger">
+            <ng-container *ngIf="employeeForm.get('mobile').errors?.['maxlength'] || employeeForm.get('mobile').errors?.['minlength']">&#9888;mobile should be of 10 digit.</ng-container>
+            <ng-container *ngIf="employeeForm.get('mobile').errors?.['pattern']">&#9888;mobile should of digit only.</ng-container>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="employement-info-container">
+    <span class="employement-info-head">Employement Information</span>
+    <div class="employemnt-details d-grid">
+      <div class="joining-date">
+        <label class="form-label" for="new-emp-join-date">Joining Date</label><br />
+        <input type="date" 
+        [ngStyle]="(employeeForm.get('joiningDate').invalid && employeeForm.get('joiningDate').dirty) ? {'border':'2px solid red'} : {'border':'2px solid var(--white-800)'}"
+        name="joiningDate" formControlName="joiningDate" id="new-emp-join-date" />
+        <span class="text-danger" *ngIf="employeeForm.get('joiningDate').errors?.['required']"> This is required field</span>
+      </div>
+      <div class="emp-location-select">
+        <label class="form-label" for="select-location">Location </label><br />
+        <select id="select-location" value="" name="location" formControlName="locationId" (change)="locationDeptChnaged()">
+          <option value="" selected hidden>Select Location</option>
+          <option *ngFor="let loc of locations" [value]="loc.id">{{loc.name}}</option>
+        </select>
+        <span class="text-danger" *ngIf="employeeForm.get('locationId').errors?.['required'] && employeeForm.get('locationId').touched"> This is required field</span>
+      </div>
+      <div class="emp-job-role">
+        <label class="form-label" for="select-role">Role</label><br />
+        <select id="select-role" value="" name="role" formControlName="roleId" [disabled]="employeeForm.get('locationId').invalid || employeeForm.get('departmentId').invalid">
+          <option value="" selected hidden>Select Role</option>
+          <option *ngFor="let role of roles" [value]="role.id">{{role.name}}</option>
+        </select>
+        <span class="text-danger" *ngIf="employeeForm.get('roleId').errors?.['required'] && employeeForm.get('roleId').touched"> This is required field</span>
+      </div>
+      <div class="emp-dept">
+        <label class="form-label" for="select-dept">Department</label><br />
+        <select id="select-dept" name="dept" value="" formControlName="departmentId" (change)="locationDeptChnaged()">
+          <option value="" selected hidden>Select Department</option>
+          <option *ngFor="let dept of departments" [value]="dept.id">{{dept.name}}</option>
+        </select>
+        <span class="text-danger" *ngIf="employeeForm.get('departmentId').errors?.['required'] && employeeForm.get('departmentId').touched"> This is required field</span>
+      </div>
+      <div class="assign-manager">
+        <label class="form-label" for="select-manager">Assign Manager</label><br />
+        <select id="select-manager" name="managerAssigned" formControlName="manager">
+          <option value="" selected hidden>Select Manager</option>
+          <option *ngFor="let emp of managers" [value]="emp.id">{{emp.id}} - {{emp.firstName+ emp.lastName}}</option>
+        </select>
+      </div>
+      <div class="assign-project">
+        <label class="form-label" for="select-project">Assign Project</label><br />
+        <select id="select-project" name="projectAssigned" formControlName="projectId">
+          <option value="" selected hidden>Select Project</option>
+          <option *ngFor="let proj of projects" [value]="proj.id">{{proj.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="cancel-add-btn d-flex">
+    <button class="cancel-new-empl b-5" type="reset">
+      Cancel
+    </button>
+    <button class="insert-empl btn b-5" type="submit" [disabled]="employeeForm.invalid || !employeeForm.touched">
+      {{formTitle}}
+    </button>
+  </div>
+</form>
+</div>
+

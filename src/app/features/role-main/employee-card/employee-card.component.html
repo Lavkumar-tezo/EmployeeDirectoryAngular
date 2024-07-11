@@ -1,0 +1,30 @@
+<div class="role-card flex-container flex-col">
+    <div class="employee-card-title w-100 d-flex">
+        <img [src]="(employee.profile)? employee.profile:'assets/images/dummy-profile-image.jpg'" alt="admin"
+            class="employee-card-img">
+        <div class="employee-detail">
+            <div class="employee-name">{{employee.firstName}} {{employee.lastName}}</div>
+            <div class="employee-dept">{{employee.roleName}}</div>
+        </div>
+    </div>
+    <div class="w-100 role-details">
+        <div class="role-department d-flex w-100 jus-content-start">
+            <div class="dept-icon d-flex"><img src="assets/icons/emp-id.svg" alt="department-id"></div>
+            <div class="emp-office-detail">{{employee.id}}</div>
+        </div>
+        <div class="role-department d-flex w-100 jus-content-start">
+            <div class="dept-icon d-flex"><img src="assets/icons/email.svg" alt="email-icon"></div>
+            <div class="emp-office-detail"> {{employee.email}} </div>
+        </div>
+        <div class="role-department d-flex w-100 jus-content-start">
+            <div class="dept-icon d-flex"><img src="assets/icons/team.svg" alt="team-icon"></div>
+            <div class="emp-office-detail"> {{employee.departmentName}} </div>
+        </div>
+        <div class="role-department d-flex w-100 jus-content-start">
+            <div class="dept-icon d-flex"><img src="assets/icons/location.svg" alt="location-icon"></div>
+            <div class="emp-office-detail"> {{employee.locationName}} </div>
+        </div>
+    </div><a routerLink="" title="employee-page" target="_blank" class="anchor view-all-container">
+        <div class="view-all d-flex">View <img src="assets/icons/vector.svg" alt="right-arrow"></div>
+    </a>
+</div>

@@ -1,0 +1,70 @@
+<div class="sidebar-container flex-container flex-col jus-content-btw">
+    <div class="sidebar-main">
+      <div class="logo-container flex-container jus-content-btw">
+        <div href="">
+          <img [src]="(isSidebarVisible) ? 'assets/images/tezo-logo.png':'assets/images/tezo-logo-min.png'" alt="tezo" class="logo p-5" [ngClass]="{'min-logo':!isSidebarVisible}"/>
+        </div>
+        <img src="assets/images/handle.png" alt="arrow-icon" class="sidebar-min-icon" [ngClass]="{'sidebar-min-icon-expand':!isSidebarVisible}" (click)="toggleSidebarSize()"/>
+      </div>
+
+      <div class="navbar-section w-100">
+        <div class="navbar-sec-heading p-5">All</div>
+        <div class="navbar-items">
+          <div class="navbar-item b-5 d-flex jus-content-btw">
+            <div class="navbar-item-logo d-flex">
+              <img src="assets/icons/dashboard-black.svg" alt="Dashboard-icon" />
+              <div class="navbar-item-title" *ngIf="isSidebarVisible">Dashboard</div>
+            </div>
+          </div>
+          <div routerLink="employees" [routerLinkActive]="'active'"  class="navbar-item b-5 d-flex jus-content-btw">
+            <div class="navbar-item-logo d-flex">
+              <img [src]="employeeLinkImg" alt="employee-icon" />
+              <div class="navbar-item-title" *ngIf="isSidebarVisible">Employees</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-section w-100 role-manage-sec">
+        <div class="navbar-sec-heading p-5">
+          <div class="md-heading" *ngIf="isSidebarVisible">Role / User Management</div>
+          <div class="sm-heading" *ngIf="!isSidebarVisible">Role</div>
+        </div>
+        <div class="navbar-items">
+          <!-- <a routerLink="roles" class="anchor side-role-sec" routerActiveLink="active"> -->
+            <div routerLink="roles" [routerLinkActive]="'active'"  class="navbar-item side-role-sec flex-container jus-content-btw">
+              <div class="navbar-item-logo d-flex">
+                <img [src]="roleLinkImg" alt="role-icon" />
+                <div class="navbar-item-title" *ngIf="isSidebarVisible">Role</div>
+              </div>
+              <div class="side-explore-arrow" *ngIf="isSidebarVisible">
+                <img src="assets/icons/arrow-black.svg" alt="arrow-icon" />
+              </div>
+            </div>
+          <!-- </a> -->
+
+          <div class="navbar-item flex-container jus-content-btw">
+            <div class="navbar-item-logo d-flex">
+              <img src="assets/icons/assign-user-black.svg" alt="" />
+              <div class="navbar-item-title" *ngIf="isSidebarVisible">Access Rights</div>
+            </div>
+            <div class="side-explore-arrow" *ngIf="isSidebarVisible">
+              <img src="assets/icons/arrow-black.svg" alt="arrow-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-update-container p-5" *ngIf="isUpdateBoxVisible && isSidebarVisible">
+      <div class="app-update">
+        <div class="app-update-title">Install new update 2.3.1A</div>
+        <div class="app-update-desc">
+          Allow to launch the new update for the AD Application
+        </div>
+        <div class="app-update-btns">
+          <button class="dismiss-btn btn b-5" (click)="hideUpdateBox()">Dismiss</button>
+          <button class="accept-btn btn b-5" (click)="hideUpdateBox()">Accept</button>
+        </div>
+      </div>
+    </div>
+</div>

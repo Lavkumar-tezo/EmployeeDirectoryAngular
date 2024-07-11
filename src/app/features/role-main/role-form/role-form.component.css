@@ -1,0 +1,214 @@
+.add-role-container {
+    width: 100%;
+    top: 10%;
+    height: 80vh;
+    overflow: auto;
+    background: white;
+    z-index: 3;
+}
+
+.role-form-heading {
+    font-size: 1rem;
+}
+
+.add-role{
+    margin-top: 0.4rem;
+    padding-left: 2px;
+    font-size: 0.6rem;
+}
+
+.add-role input,
+.add-role textarea {
+    outline: 0;
+    border: 2px solid rgba(227, 229, 233, 255);
+    border-radius: 2px;
+    padding-left: 0.25rem;
+}
+
+.add-role input,
+.add-role select {
+    margin-top: 0.25rem;
+    height: 1.5rem;
+}
+
+.add-role label {
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.add-role select {
+    border: 0;
+    background-color: var(--slectBg);
+    overflow: scroll;
+}
+
+.add-role select:focus{
+    height: 10vh;
+    z-index: 3;
+    width: 45%;
+}
+
+#role-dept:focus{
+    position: absolute;
+    left: 55%;
+    width: 45%;
+}
+
+.add-role select:not(:focus),#role-dept:not(:focus){
+    height: 1.5rem;
+    position: relative;
+    left: 0;
+}
+
+.form-main-fields {
+    width: 50%;
+}
+
+.role-name-dept,
+.role-desc,
+.role-location {
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.role-name-container,
+.role-dept {
+    width: 45%;
+}
+
+#role-name,
+#role-dept {
+    width: 100%;
+}
+
+#role-desc{
+    width: 100%;
+    height: 120px;
+    margin-top: 0.5rem;
+}
+
+.add-role input:focus {
+    border-color: var(--blue);
+}
+
+.add-role select:focus {
+    border: 2px solid var(--blue);
+}
+
+.role-location,
+.role-assign-employee {
+    width: 60%;
+    position: relative;
+}
+
+#role-location,#edit-role-location,
+#assign-employees, #edit-assign-employees,
+.all-employees {
+    width: 100%;
+}
+
+
+.add-cancel-btns {
+    justify-content: flex-end;
+    gap: 2%;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.cancel-add-role,.cancel-edit-role {
+    background-color: var(--red-400);
+    color: var(--red-800);
+    border: 0;
+    text-align: center;
+    padding: 0.25rem 1.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.submit-add-role,.submit-edit-role {
+    white-space: nowrap;
+    cursor: pointer;
+}
+.text-danger{
+    color: red;
+}
+
+@media screen and (max-width:1080px) {
+    .form-main-fields {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .role-name-dept {
+        gap: 3%;
+    }
+
+    .role-name-container {
+        width: 48%;
+    }
+
+    .add-role input,
+    .add-role select {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .add-role input,
+    .add-role select {
+        font-size: 0.7rem;
+    }
+
+    .role-location,
+    .role-assign-employee {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .add-role label {
+        font-size: 1rem;
+    }
+
+    .add-role input,
+    .add-role select {
+        font-size: 1.2rem;
+        height: 2.5rem;
+    }
+
+    .employee-name-img {
+        height: 30px;
+    }
+
+    .assign-emp-detail span {
+        font-size: 1rem;
+    }
+
+    .cancel-add-role,
+    .submit-add-role {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .form-main-fields {
+        width: 80%;
+    }
+
+    .role-location,
+    .role-assign-employee {
+        width: 80%;
+    }
+
+    .add-cancel-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .add-cancel-btns button {
+        width: 25%;
+        align-self: flex-end;
+    }
+}

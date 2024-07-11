@@ -1,0 +1,10 @@
+<div class="w-100 employee-page">
+    <app-page-title [titleDesc]="roleDetailsPageDesc"></app-page-title>
+    <div class="role-card-container w-100 d-grid">
+        <app-employee-card [employee]="employee" *ngFor="let employee of employeeList"></app-employee-card>
+        <div class="no-record-card" *ngIf="!employeeList.length">
+            No Employee found
+        </div>
+    </div>
+</div>
+

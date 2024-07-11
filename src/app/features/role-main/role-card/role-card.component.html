@@ -1,0 +1,39 @@
+<div class="role-card flex-container flex-col">
+    <div class="role-title-icon d-flex jus-content-btw w-100">
+        <div class="role-title">{{roledata.name}}</div>
+        <img src="assets/icons/edit.svg" alt="edit-icon" (click)="openEditForm()">
+    </div>
+    <div class="w-100 role-details flex-container flex-col">
+        <div class="role-department d-flex jus-content-btw w-100">
+            <div class="dept-icon d-flex"><img src="assets/icons/emp-id.svg" alt="department-icon">Departments</div>
+            <div class="role-dept-name">{{roledata.departmentNames.join(', ')}}</div>
+        </div>
+        <div class="role-department d-flex jus-content-btw w-100">
+            <div class="dept-icon d-flex"><img src="assets/icons/location.svg" alt="location-icon">Locations</div>
+            <div class="role-dept-location">{{roledata.locationNames.join(', ')}}</div>
+        </div>
+        <div class="role-department d-flex jus-content-btw w-100">
+            <div class="dept-icon">Total Employee</div>
+            <div class="empl-profile-container d-flex jus-content-btw">
+                <img
+                    [src]="(employeeList[0].profile)? employeeList[0].profile:'assets/images/dummy-profile-image.jpg'" alt="profile-img" class="profile-1" *ngIf="employeeList.length > 0">
+                <img
+                    [src]="(employeeList[1].profile)? employeeList[1].profile:'assets/images/dummy-profile-image.jpg'" alt="profile-img" class="profile-2" *ngIf="employeeList.length > 1">
+                <img
+                    [src]="(employeeList[2].profile)? employeeList[2].profile:'assets/images/dummy-profile-image.jpg'" alt="profile-img" class="profile-3" *ngIf="employeeList.length > 2">
+                <img
+                    [src]="(employeeList[3].profile)? employeeList[3].profile:'assets/images/dummy-profile-image.jpg'" alt="profile-img" class="profile-4" *ngIf="employeeList.length > 3">
+                <span *ngIf="employeeList.length > 4" class="plus-employee">
+                    + {{employeeList.length - 4}}
+                </span>
+                    
+            </div>
+                    
+        </div>
+    </div>
+    <a class="anchor view-all-container" [routerLink]="[roledata.id]"
+        title="employee-page">
+        <div class="view-all-container d-flex">View all Employee<img src="assets/icons/vector.svg" alt="right-arrow">
+        </div>
+    </a>
+</div>

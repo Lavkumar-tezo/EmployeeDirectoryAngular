@@ -1,0 +1,39 @@
+.role-filter{
+    width: 100%;
+    gap:0.5rem;
+    margin-top: 2vh;
+}
+.filter-opts {
+    gap: 0.5rem;
+}
+
+.filter-icon-container {
+    color: var(--red);
+    gap: 0.25rem;
+}
+
+.filter-select {
+    outline: 0;
+    font-size: 0.7rem;
+    color: var(--blue-200);
+    border: 1px solid #fac0c0;
+    border-radius: 5px;
+}
+
+.btn-container {
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+}
+
+.reset-btn {
+    background-color: white;
+    color: var(--red);
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+    border: 1px solid var(--red-800);
+}
+
+.apply-btn {
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+}

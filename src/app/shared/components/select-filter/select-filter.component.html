@@ -1,0 +1,13 @@
+<div class="custom-select-container">
+    <input type="text" [id]="name" [name]="name" class="custom-input"
+      [placeholder]="name" [value]="count === 0 ? '' : count + ' selected'"
+      readonly (focus)="showDropdown()" />
+    <div class="custom-options" [ngStyle]="{'display': isDropdownVisible ? 'block' : 'none'}">
+      <label class="custom-option" *ngFor="let value of values">
+        <input type="checkbox" [value]="value.id" (change)="onCheckboxChange($event)" />
+        <span class="custom-checkmark"></span>
+        {{ value.name }}
+      </label>
+    </div>
+  </div>
+  

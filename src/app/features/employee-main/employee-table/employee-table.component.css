@@ -1,0 +1,221 @@
+.employee-table-container {
+    border-radius: 5px;
+    overflow: auto;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 4rem;
+    z-index: 1;
+}
+
+.table-delete-btn {
+    background-color: #f89191;
+    font-size: 0.7rem;
+    padding: 0.1rem 0.4rem;
+}
+
+.table-add-delete {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding: 0.5rem 0.8rem;
+    z-index: 2;
+    height: 3rem;
+}
+
+.employee-main-table {
+    padding: 0 0.5rem;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.employee-table {
+    width: 100%;
+    font-size: 0.7rem;
+    position: relative;
+    overflow: auto;
+    border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+    text-align: left;
+}
+
+.emp-profile-container {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.employee-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.empl-table-header {
+    position: sticky;
+    top: 2.9rem;
+    left: 0;
+    background-color: #fafafc;
+    border-top: 1px solid rgb(196, 195, 195);
+    height: 8%;
+    z-index: 10;
+}
+
+th:not(:first-of-type)::after {
+    content: "";
+}
+
+.table-heading {
+    color: var(--blue-200);
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+.emp-table-row {
+    border-bottom: 1px solid rgb(196, 195, 195);
+    height: 2.5rem;
+}
+
+.emp-table-row:hover {
+    background-color: #fff4f4;
+}
+
+.no-records-container {
+    height: 2.5rem;
+}
+
+.no-records-message {
+    text-align: center;
+}
+.employee-table-body{
+    font-weight: 500;
+}
+
+.empl-profile-detail {
+    gap: 0.2rem;
+    padding: 0.5rem 0;
+    width: 10rem;
+}
+
+.employee-profile {
+    overflow: hidden;
+    width: calc(100% - 2.5rem);
+}
+
+.employee-name,
+.employee-email {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.employee-email {
+    font-size: 85%;
+    color: var(--blue-150);
+}
+
+.employee-role {
+    text-transform: capitalize;
+}
+
+.employee-role div {
+    width: 8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.employee-status-value {
+    background-color: #e7f4e8;
+    text-align: center;
+    color: var(--green-800);
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+
+.three-dots,
+.three-dots-header {
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.row-edit-container {
+    position: relative;
+}
+
+.empl-edit-options {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    gap: 0.2rem;
+    z-index: 10;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.empl-edit-options span:not(:last-child) {
+    border-bottom: 1px solid rgb(196, 195, 195);
+    padding-bottom: 0.25rem;
+}
+
+.row-delete,
+.row-edit,
+.status-change {
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+.row-edit {
+    padding-top: 0.25rem;
+}
+
+.status-change {
+    padding-bottom: 0.25rem;
+}
+
+.selected-employee,
+.employee-select {
+    min-width: 30px;
+    padding-left: 0.5rem;
+}
+
+.delete-pop-up {
+    width: 20rem;
+    height: 100px;
+    gap: 1rem;
+    background-color: white;
+    position: fixed;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.delete-dialog-cross {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.cancel-delete {
+    background-color: var(--red-400);
+    color: var(--red-800);
+    border: 0;
+    text-align: center;
+    padding: 0.25rem;
+    white-space: nowrap;
+    cursor: pointer;
+}

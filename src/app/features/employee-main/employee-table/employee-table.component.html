@@ -1,0 +1,114 @@
+<div class="employee-table-container w-100">
+    <div class="table-add-delete d-flex jus-content-btw">
+        <div class="delete-opt-container flex-container">
+            <img src="assets/icons/arrow-turn-left-down.svg" alt="arrow-turn-left-down" class="table-delete-arrow" (click)="hideDeleteDialogBox()" />
+            <button class="btn table-delete-btn" [disabled]="((selctedRowCount == 0) && (employeeList.length != 0)) " [ngStyle]="{'backgroundColor': ((selctedRowCount == 0) && (employeeList.length != 0)) ? '#F89191' : 'red' }" (click)="showDeleteDialogBox()">Delete</button>
+        </div>
+        <div class="table-add-opt">
+            <img src="assets/icons/table-add.svg" alt="table-add" />
+        </div>
+    </div>
+    <div class="employee-main-table">
+        <table class="employee-table">
+            <thead class="empl-table-header">
+                <tr class="emp-table-row">
+                    <th class="table-heading">
+                        <input type="checkbox" class="employee-select" [checked]="(selctedRowCount == employeeList.length) && (employeeList.length != 0) && isHeaderChecked" (click)="onAllRowSelect($event)" />
+                    </th>
+                    <th class="table-heading" (click)="sortTable('fName')">
+                        <div>
+                            <span>USER</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading" (click)="sortTable('location')">
+                        <div>
+                            <span>LOCATION</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading" (click)="sortTable('department')">
+                        <div>
+                            <span>DEPARTMENT</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading" (click)="sortTable('role')">
+                        <div>
+                            <span>ROLE</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading" (click)="sortTable('id')">
+                        <div>
+                            <span>EMP NO</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading employee-status-header" (click)="sortTable('status')">
+                        <div>
+                            <span>STATUS</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading" (click)="sortTable('joiningDate')">
+                        <div>
+                            <span>JOIN DT</span>
+                            <img src="assets/icons/sort.svg" alt="sort-icon" />
+                        </div>
+                    </th>
+                    <th class="table-heading">
+                        <button class="three-dots-header">
+                            <img src="assets/icons/three-dot.svg" alt="three-dot" />
+                        </button>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody class="employee-table-body">
+                <tr class="no-records-container" [ngStyle]="{'display': (employeeList.length) ? 'none' : ''}">
+                    <td class="no-records-message" colspan="9">
+                        <div class="flex-container">No records Found</div>
+                    </td>
+                </tr>
+                <tr class="emp-table-row" *ngFor="let employee of employeeList">
+                    <td class="selected-employee">
+                        <input type="checkbox" name="select" class="select" (click)="onSelectRow(employee.id, $event)" [checked]="selectedIds.has(employee.id)" />
+                    </td>
+                    <td class="d-flex jus-content-start emp-profile">
+                        <div class="d-flex empl-profile-detail">
+                            <div class="emp-profile-container flex-container"><img [src]="(employee.profile) ? employee.profile: 'assets/images/dummy-profile-image.jpg'" alt="employee-image" class="employee-img"></div>
+                            <div class="employee-profile d-flex flex-col"><span class="employee-name" title="">{{employee.firstName}} {{employee.lastName}}</span>
+                                <span class="employee-email" [title]="employee.email">{{employee.email}}</span></div>
+                        </div>
+                    </td>
+                    <td class="employee-location">{{employee.locationName}}</td>
+                    <td class="employee-department">{{employee.departmentName}}</td>
+                    <td class="employee-role">
+                        <div>{{employee.roleName}} </div>
+                    </td>
+                    <td class="employee-no">{{employee.id}}</td>
+                    <td class="employee-status"><span class="employee-status-value" [ngStyle]="{'color': (employee.status != 'Active') ? 'red' : '', 'background-color': (employee.status != 'Active') ? 'rgb(255, 230, 230)' : ''}">{{employee.status}}</span></td>
+                    <td class="employee-join-dt">{{employee.joiningDate | date: 'dd/MM/yyyy'}}</td>
+                    <td class="row-edit-container">
+                        <button class="three-dots" (click)="toggleEditOption($event, employee.id)"><img src="assets/icons/three-dot.svg" alt="three-dot" /></button>
+                        <div class="empl-edit-options d-flex flex-col" [ngClass]="{'hide': employeeIdWithOptions !== employee.id}">
+                            <span class="row-edit" [routerLink]="['employeeform', employee.id]">Edit</span>
+                            <span class="row-delete" (click)="showDeleteDialogBox(employee.id)">Delete</span>
+                            <option class="status-change" (click)="toggleStatus(employee.id)">Mark as {{employee.status == "Active" ? 'Inactive' : 'Active'}}</option>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="delete-pop-up flex-container flex-col" *ngIf="isRowDelete">
+    <span>Do you want to delete {{selectedRowCountText}}?</span>
+    <div class="cancel-delete-btn">
+        <button class="cancel-delete b-5" (click)="hideDeleteDialogBox()">Cancel</button>
+        <button class="delete-row-btn btn b-5" (click)="deleteEmployee()">Delete</button>
+    </div>
+    <img src="assets/icons/cross.svg" alt="cross-icon" class="delete-dialog-cross" (click)="hideDeleteDialogBox()" />
+</div>
+

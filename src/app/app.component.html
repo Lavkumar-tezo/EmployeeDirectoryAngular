@@ -1,0 +1,27 @@
+<ng-container [ngSwitch]="pageLayoutService.layout$ | async">
+    <app-authorized-layout *ngSwitchCase="PageLayout.Authorized">
+        <router-outlet />
+    </app-authorized-layout>
+
+    <app-unauthorized-layout *ngSwitchCase="PageLayout.UnAuthorized">
+        <router-outlet />
+    </app-unauthorized-layout>
+
+    <app-error-layout *ngSwitchCase="PageLayout.Error">
+        <router-outlet />
+    </app-error-layout>
+
+    <app-unauthorized-layout *ngSwitchDefault>
+        <router-outlet />
+    </app-unauthorized-layout>
+</ng-container>
+<div class="toast flex-container" *ngIf="message" [class.red]="isError">
+    <div class="toast-tick-container flex-container"
+        [ngStyle]="{'background-color':(isError) ? 'var(--red-800)':'#8cdb94'}">
+        <img src="/assets/icons/tick.svg" alt="tick">
+    </div>
+    <span>{{message}}</span>
+    <div class="toast-cross-container flex-container" (click)="hidePopup()">
+        <img src="/assets/icons/cross.svg" alt="cross">
+    </div>
+</div>

@@ -1,0 +1,20 @@
+export class Employee{
+    profile:string;
+    firstName:string;
+    lastName:string;
+    email:string;
+    joiningDate:string;
+    departmentName:string;
+    departmentId:string;
+    locationName:string;
+    locationId:string;
+    roleName:string;
+    roleId:string;
+    id:string;
+    dob:string;
+    projectName:string;
+    projectId:string;
+    manager:string;
+    status:string;
+    mobile:number;
+}
