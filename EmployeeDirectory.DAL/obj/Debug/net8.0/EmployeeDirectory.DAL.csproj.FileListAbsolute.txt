@@ -1,0 +1,88 @@
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.sourcelink.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\DatabaseFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.sourcelink.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\c#-Task-EF\CodeFirst\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Web API\EmployeeDirectory\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.sourcelink.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.sourcelink.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\JWT\Web_Api\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.deps.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.runtimeconfig.json
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\bin\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.AssemblyReference.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfoInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.AssemblyInfo.cs
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\refint\EmployeeDirectory.DAL.dll
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.pdb
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\EmployeeDirectory.DAL.genruntimeconfig.cache
+C:\Users\lav.k\OneDrive - Technovert\Desktop\tezo\Angular\employeeDirectory\back-end\EmployeeDirectory.DAL\obj\Debug\net8.0\ref\EmployeeDirectory.DAL.dll
